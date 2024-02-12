@@ -229,10 +229,10 @@ public class InvalidTestBuyForm {
     }
 
     @Test
-    @DisplayName("Should get error notification if in form 'CardNumber' insert value of symbols (aaaa aaaa aaaa aaaa)")
+    @DisplayName("Should get error notification if in form 'CardNumber' insert value of symbols (!!!! $$$$ %%%% ####)")
     void shouldGetErrorNotificationIfCardNumberFormHaveValueOfSymbols() {
         travelPage.cleanForm(DataHelper.formName().getCardNumber());
-        travelPage.setForm(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
+        travelPage.setForm(DataHelper.formName().getCardNumber(), "!!!! $$$$ %%%% ####");
         travelPage.clickButton(DataHelper.buttonForInsert().getNext());
         travelPage.findInvalidFormat(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
     }
