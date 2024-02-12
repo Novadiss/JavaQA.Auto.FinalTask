@@ -102,138 +102,138 @@ public class InvalidTestBuyForm {
         travelPage.findInvalidFormat(DataHelper.formName().getCardNumber(), "Неверный формат");
     }
 
-//    @Test
-//    @DisplayName("Should get error notification if in form 'month' insert incorrect zero value")
-//    void shouldGetErrorNotificationIfMonthFormHaveZeroValue() {
-//        travelPage.cleanForm(DataHelper.formName().getMonth());
-//        travelPage.setForm(DataHelper.formName().getMonth(), "00");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getMonth(), "Неверно указан срок действия карты");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'month' insert incorrect value of letters (aa)")
-//    void shouldGetErrorNotificationIfMonthFormHaveLettersValue() {
-//        travelPage.cleanForm(DataHelper.formName().getMonth());
-//        travelPage.setForm(DataHelper.formName().getMonth(), "aa");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getMonth(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'month' insert incorrect value of symbols (%!)")
-//    void shouldGetErrorNotificationIfMonthFormHaveSymbolsValue() {
-//        travelPage.cleanForm(DataHelper.formName().getMonth());
-//        travelPage.setForm(DataHelper.formName().getMonth(), "aa");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getMonth(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'year' insert incorrect value of letters (aa)")
-//    void shouldGetErrorNotificationIfYearFormHaveLettersValue() {
-//        travelPage.cleanForm(DataHelper.formName().getYear());
-//        travelPage.setForm(DataHelper.formName().getYear(), "aa");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getYear(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'year' insert incorrect value of symbols (№!)")
-//    void shouldGetErrorNotificationIfYearFormHaveSymbolsValue() {
-//        travelPage.cleanForm(DataHelper.formName().getYear());
-//        travelPage.setForm(DataHelper.formName().getYear(), "№!");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getYear(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of lowercase letter (vasya)")
-//    void shouldGetErrorNotificationIfNameFormHaveValueOfLowercaseLetter() {
-//        travelPage.cleanForm(DataHelper.formName().getName());
-//        travelPage.setForm(DataHelper.formName().getName(), "vasya");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of Cyrillic (vasya)")
-//    void shouldGetErrorNotificationIfNameFormHaveValueOfCyrillic() {
-//        travelPage.cleanForm(DataHelper.formName().getName());
-//        travelPage.setForm(DataHelper.formName().getName(), "ВАСЯ");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of number (8439)")
-//    void shouldGetErrorNotificationIfNameFormHaveValueOfNumber() {
-//        travelPage.cleanForm(DataHelper.formName().getName());
-//        travelPage.setForm(DataHelper.formName().getName(), "8439");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of symbols (!!;;%))")
-//    void shouldGetErrorNotificationIfNameFormHaveValueOfSymbols() {
-//        travelPage.cleanForm(DataHelper.formName().getName());
-//        travelPage.setForm(DataHelper.formName().getName(), "!!;;%)");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of tree words (VASYA VASYA VASYA)")
-//    void shouldGetErrorNotificationIfNameFormHaveValueOfTreeWords() {
-//        travelPage.cleanForm(DataHelper.formName().getName());
-//        travelPage.setForm(DataHelper.formName().getName(), "VASYA VASYA VASYA");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Code' insert incorrect zero value (000)")
-//    void shouldGetErrorNotificationIfCodeFormHaveZeroValue() {
-//        travelPage.cleanForm(DataHelper.formName().getCodeCSV());
-//        travelPage.setForm(DataHelper.formName().getCodeCSV(), "000");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getCodeCSV(), "Неверный формат");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Code' insert incorrect value of letters (aaa)")
-//    void shouldGetErrorNotificationIfCodeFormHaveValueOfLetters() {
-//        travelPage.cleanForm(DataHelper.formName().getCodeCSV());
-//        travelPage.setForm(DataHelper.formName().getCodeCSV(), "aaa");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getCodeCSV(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'Code' insert incorrect value of symbols (%!№)")
-//    void shouldGetErrorNotificationIfCodeFormHaveValueOfSymbols() {
-//        travelPage.cleanForm(DataHelper.formName().getCodeCSV());
-//        travelPage.setForm(DataHelper.formName().getCodeCSV(), "%!№");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getCodeCSV(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'CardNumber' insert value of letters (aaaa aaaa aaaa aaaa)")
-//    void shouldGetErrorNotificationIfCardNumberFormHaveValueOfLetters() {
-//        travelPage.cleanForm(DataHelper.formName().getCardNumber());
-//        travelPage.setForm(DataHelper.formName().getCardNumber(), "aaaa aaaa aaaa aaaa");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
-//    }
-//
-//    @Test
-//    @DisplayName("Should get error notification if in form 'CardNumber' insert value of symbols (aaaa aaaa aaaa aaaa)")
-//    void shouldGetErrorNotificationIfCardNumberFormHaveValueOfSymbols() {
-//        travelPage.cleanForm(DataHelper.formName().getCardNumber());
-//        travelPage.setForm(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
-//        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
-//        travelPage.findInvalidFormat(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
-//    }
+    @Test
+    @DisplayName("Should get error notification if in form 'month' insert incorrect zero value")
+    void shouldGetErrorNotificationIfMonthFormHaveZeroValue() {
+        travelPage.cleanForm(DataHelper.formName().getMonth());
+        travelPage.setForm(DataHelper.formName().getMonth(), "00");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getMonth(), "Неверно указан срок действия карты");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'month' insert incorrect value of letters (aa)")
+    void shouldGetErrorNotificationIfMonthFormHaveLettersValue() {
+        travelPage.cleanForm(DataHelper.formName().getMonth());
+        travelPage.setForm(DataHelper.formName().getMonth(), "aa");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getMonth(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'month' insert incorrect value of symbols (%!)")
+    void shouldGetErrorNotificationIfMonthFormHaveSymbolsValue() {
+        travelPage.cleanForm(DataHelper.formName().getMonth());
+        travelPage.setForm(DataHelper.formName().getMonth(), "aa");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getMonth(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'year' insert incorrect value of letters (aa)")
+    void shouldGetErrorNotificationIfYearFormHaveLettersValue() {
+        travelPage.cleanForm(DataHelper.formName().getYear());
+        travelPage.setForm(DataHelper.formName().getYear(), "aa");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getYear(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'year' insert incorrect value of symbols (№!)")
+    void shouldGetErrorNotificationIfYearFormHaveSymbolsValue() {
+        travelPage.cleanForm(DataHelper.formName().getYear());
+        travelPage.setForm(DataHelper.formName().getYear(), "№!");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getYear(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of lowercase letter (vasya)")
+    void shouldGetErrorNotificationIfNameFormHaveValueOfLowercaseLetter() {
+        travelPage.cleanForm(DataHelper.formName().getName());
+        travelPage.setForm(DataHelper.formName().getName(), "vasya");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of Cyrillic (vasya)")
+    void shouldGetErrorNotificationIfNameFormHaveValueOfCyrillic() {
+        travelPage.cleanForm(DataHelper.formName().getName());
+        travelPage.setForm(DataHelper.formName().getName(), "ВАСЯ");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of number (8439)")
+    void shouldGetErrorNotificationIfNameFormHaveValueOfNumber() {
+        travelPage.cleanForm(DataHelper.formName().getName());
+        travelPage.setForm(DataHelper.formName().getName(), "8439");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of symbols (!!;;%))")
+    void shouldGetErrorNotificationIfNameFormHaveValueOfSymbols() {
+        travelPage.cleanForm(DataHelper.formName().getName());
+        travelPage.setForm(DataHelper.formName().getName(), "!!;;%)");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Name' insert incorrect value of tree words (VASYA VASYA VASYA)")
+    void shouldGetErrorNotificationIfNameFormHaveValueOfTreeWords() {
+        travelPage.cleanForm(DataHelper.formName().getName());
+        travelPage.setForm(DataHelper.formName().getName(), "VASYA VASYA VASYA");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getName(), "Неверный формат");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Code' insert incorrect zero value (000)")
+    void shouldGetErrorNotificationIfCodeFormHaveZeroValue() {
+        travelPage.cleanForm(DataHelper.formName().getCodeCSV());
+        travelPage.setForm(DataHelper.formName().getCodeCSV(), "000");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getCodeCSV(), "Неверный формат");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Code' insert incorrect value of letters (aaa)")
+    void shouldGetErrorNotificationIfCodeFormHaveValueOfLetters() {
+        travelPage.cleanForm(DataHelper.formName().getCodeCSV());
+        travelPage.setForm(DataHelper.formName().getCodeCSV(), "aaa");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getCodeCSV(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'Code' insert incorrect value of symbols (%!№)")
+    void shouldGetErrorNotificationIfCodeFormHaveValueOfSymbols() {
+        travelPage.cleanForm(DataHelper.formName().getCodeCSV());
+        travelPage.setForm(DataHelper.formName().getCodeCSV(), "%!№");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getCodeCSV(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'CardNumber' insert value of letters (aaaa aaaa aaaa aaaa)")
+    void shouldGetErrorNotificationIfCardNumberFormHaveValueOfLetters() {
+        travelPage.cleanForm(DataHelper.formName().getCardNumber());
+        travelPage.setForm(DataHelper.formName().getCardNumber(), "aaaa aaaa aaaa aaaa");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
+    }
+
+    @Test
+    @DisplayName("Should get error notification if in form 'CardNumber' insert value of symbols (aaaa aaaa aaaa aaaa)")
+    void shouldGetErrorNotificationIfCardNumberFormHaveValueOfSymbols() {
+        travelPage.cleanForm(DataHelper.formName().getCardNumber());
+        travelPage.setForm(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
+        travelPage.clickButton(DataHelper.buttonForInsert().getNext());
+        travelPage.findInvalidFormat(DataHelper.formName().getCardNumber(), "Поле обязательно для заполнения");
+    }
 }
