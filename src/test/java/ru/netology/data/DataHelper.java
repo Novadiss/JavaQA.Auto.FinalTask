@@ -14,10 +14,6 @@ public class DataHelper {
     private DataHelper() {
     }
 
-    public static ValidChooseForForm validChooseForForm() {
-        return new ValidChooseForForm("1111 2222 3333 4444", "5555 6666 7777 8888", "03", "25", "VASYA PUPKIN", "333");
-    }
-
     public static Owner generateValidOwner() {
         return new Owner(
                 (faker.name().firstName().toUpperCase(Locale.ROOT) + " " + faker.name().lastName().toUpperCase(Locale.ROOT)),
@@ -142,16 +138,6 @@ public class DataHelper {
     public static class Owner {
         String firstNameAndLastName;
         String firstName;
-    }
-
-    @Value
-    public static class ValidChooseForForm {
-        String approvedCard;
-        String declineCard;
-        String month;
-        String year;
-        String name;
-        String codeCSV;
     }
 
     @Value
