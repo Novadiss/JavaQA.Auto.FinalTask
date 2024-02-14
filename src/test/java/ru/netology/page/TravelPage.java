@@ -22,19 +22,19 @@ public class TravelPage {
 
 
     public void clickButton(String button) {
-        buttonToClick.findBy(text(String.valueOf(button))).click();
+        buttonToClick.findBy(text(button)).click();
     }
 
     public void setForm(String form, String value){
-        formForInsert.findBy(text(String.valueOf(form))).$("input").setValue(value);
+        formForInsert.findBy(text(form)).$("input").setValue(value);
     }
 
     public void cleanForm(String form) {
-        formForInsert.findBy(text(String.valueOf(form))).$("input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
+        formForInsert.findBy(text(form)).$("input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
     }
 
     public void findInvalidFormat(String form, String text) {
-        formForInsert.findBy(text(String.valueOf(form))).shouldHave(text(text));
+        formForInsert.findBy(text(form)).shouldHave(text(text), Duration.ofSeconds(15)).shouldBe(visible);
     }
 
     public void findErrorMessage(String expectedText) {

@@ -10,14 +10,14 @@ import ru.netology.page.TravelPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class InvalidTestCreditForm {
+public class InvalidTestPayForm {
 
     TravelPage travelPage;
 
     @BeforeEach
     void insertStarrValues() {
         travelPage = open("http://localhost:8080", TravelPage.class);
-        travelPage.clickButton(DataHelper.buttonForInsert().getBuyForCredit());
+        travelPage.clickButton(DataHelper.buttonForInsert().getBuy());
     }
 
     @AfterAll
